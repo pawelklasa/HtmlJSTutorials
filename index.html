@@ -5,6 +5,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <!-- Boxes -->
   <div>
     <div id="menu1">
       <div class="class2" onclick="toggleClass(this)"></div>
@@ -13,7 +14,7 @@
       <div class="class1" onclick="toggleClass(this)"></div>
     </div>
   </div>
-
+  <!-- Printing -->
   <h1>Printing document tutorial</h1>
   <div>
     <div id="div1">
@@ -29,7 +30,29 @@
     </p>
     <button onclick="printContent('p1')">Print Content</button>
   </div>
-  
+  <hr>
+
+  <!-- form + print -->
+  <p id="welcome"></p>
+  <form>
+    what is your name? :<input type="text" id="name"><br/>
+    <input type="button" onclick="write_name();" value="Done">
+  </form>
+  <hr>
+
+  <!-- Submit form -->
+  <form action="another_page.php" method="post">  <!-- get and post(more secure) method -->
+  username:<input type="text" name="surname">
+  password:<input type="password" value="login">
+  <!-- a <button> will also submit the form
+  <input type="submit" value="login"> -->
+  <button>submit</button>
+  </form>
+
+
+
+
+
   <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

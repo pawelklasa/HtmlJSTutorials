@@ -5,19 +5,30 @@
 //     el.className = "class1";
 //   }
 // }
-function toggleClass(el) {
+//Boxes
+
+function toggleClass (el) {
   var kids = document.getElementById('menu1').children;
   for (var i = 0; i < kids.length; i++) {
-    kids[i].className = "class1";
-  }
-  el.className = "class2";
+    kids[i].className = 'class1';
+  }  el.className = 'class2';
 }
 
 // printing document tutorial
-function printContent(el) {
+function printContent (el) {
   var restorepage = document.body.innerHTML;
   var printcontent = document.getElementById(el).innerHTML;
   document.body.innerHTML = printcontent;
   window.print();
   document.body.innerHTML = restorepage;
 }
+
+// form + print
+function write_name() {
+  var welcome_perra = document.getElementById('welcome');
+  var name = document.getElementById('name');
+
+  welcome_perra.innerHTML = 'welcome ' + name.value;
+}
+
+//submit form

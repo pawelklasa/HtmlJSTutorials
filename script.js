@@ -31,4 +31,15 @@ function write_name() {
   welcome_perra.innerHTML = 'welcome ' + name.value;
 }
 
-//submit form
+//validation
+function checkInfo() {
+  var userName = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
+
+  if (username == '' || password == '') {
+    alert('Please fill in all fields');
+    return false;
+  } else {
+    return true;
+  }
+}

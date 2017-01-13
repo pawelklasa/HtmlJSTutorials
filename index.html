@@ -40,13 +40,13 @@
   </form>
   <hr>
 
-  <!-- Submit form -->
-  <form action="submission.html" method="post">  <!-- get and post(more secure) method -->
-  username:<input type="text" name="surname">
-  password:<input type="password" value="login">
-  <!-- a <button> will also submit the form
-  <input type="submit" value="login"> -->
-  <button>submit</button>
+  <!-- validation -->
+  <form action="submission.html" method="post" onsubmit="return checkInfo()">  <!-- get and post(more secure) method -->
+  username:<input type="text" name="surname" id="username">
+  password:<input type="password" value="login" id="password">
+  <!-- a <button>submit</button> will also submit the form-->
+  <input type="submit" value="login">
+
   </form>
 
 
